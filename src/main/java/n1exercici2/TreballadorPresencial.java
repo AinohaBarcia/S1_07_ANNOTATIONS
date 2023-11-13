@@ -18,10 +18,10 @@ public class TreballadorPresencial extends Treballador{
 
     @Override
     public int calculateTotalSalary(int totalHoursMonth) {
-        return (totalHoursMonth * hourPrice) + fuel;
+        return super.calculateTotalSalary(totalHoursMonth) + fuel;
     }
-
     @Override
+    @Deprecated
     public int calculateAverageHoursDay(int totalHours, int daysWeek) {
         return totalHours/daysWeek;
     }

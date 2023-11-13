@@ -38,9 +38,14 @@ public abstract class Treballador {
         this.hourPrice = hourPrice;
     }
 
-    public abstract int calculateTotalSalary(int totalHours) ;
+    public int calculateTotalSalary(int totalHoursMonth) {
+        return totalHoursMonth*hourPrice;
+    }
 
-
-    public abstract int calculateAverageHoursDay (int totalHours,int daysWeek);
+    @Deprecated
+    public int calculateAverageHoursDay(int totalHours, int daysWeek) {
+        int average = totalHours / daysWeek;
+        return average;
+    }
 
 }

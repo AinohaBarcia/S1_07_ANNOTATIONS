@@ -14,8 +14,9 @@ public class TreballadorOnline extends Treballador{
 
     @Override
     public int calculateTotalSalary(int totalHoursMonth) {
-        return (totalHoursMonth*hourPrice)+WIFIPRICE;
+        return super.calculateTotalSalary(totalHoursMonth)+WIFIPRICE;
     }
+
     @SuppressWarnings("DeprecatedIsStillUsed")
     @Override
     @Deprecated
