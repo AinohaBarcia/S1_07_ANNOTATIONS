@@ -4,9 +4,9 @@ public class TreballadorOnline extends Treballador{
 
     private final int WIFIPRICE;
 
-    public TreballadorOnline(String name, String surname, int hourPrice, int WIFIPRICE) {
+    public TreballadorOnline(String name, String surname, int hourPrice) {
         super(name, surname, hourPrice);
-        this.WIFIPRICE = WIFIPRICE;
+        this.WIFIPRICE = 50;
     }
 
     public int getWIFIPRICE() {
@@ -15,6 +15,6 @@ public class TreballadorOnline extends Treballador{
 
     @Override
     public int calculateTotalSalary(int totalHoursMonth) {
-        return (totalHoursMonth*hourPrice)+WIFIPRICE;
+        return super.calculateTotalSalary(totalHoursMonth)+WIFIPRICE;
     }
 }

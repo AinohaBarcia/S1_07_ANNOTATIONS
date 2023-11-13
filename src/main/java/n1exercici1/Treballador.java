@@ -1,6 +1,6 @@
 package n1exercici1;
 
-public abstract class Treballador {
+public class Treballador {
 
     protected String name;
     protected String surname;
@@ -38,7 +38,10 @@ public abstract class Treballador {
         this.hourPrice = hourPrice;
     }
 
-    public abstract int calculateTotalSalary(int totalHours) ;
+    public int calculateTotalSalary(int totalHoursMonth) {
+        return totalHoursMonth*hourPrice;
+    }
+
 
 
 }
