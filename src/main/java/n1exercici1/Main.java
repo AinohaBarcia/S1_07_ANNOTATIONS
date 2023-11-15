@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
+
         TreballadorOnline treballadorOnline = new TreballadorOnline("Emma","Vallés",28);
         TreballadorPresencial treballadorPresencial = new TreballadorPresencial("Clara","Palacios",25);
         Treballador treballador = new Treballador("Clara","Clemente",25);

@@ -1,6 +1,6 @@
 package n1exercici2;
 
-public abstract class Treballador {
+public class Treballador {
 
     private String name;
     private String surname;
