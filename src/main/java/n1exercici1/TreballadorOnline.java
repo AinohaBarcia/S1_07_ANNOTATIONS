@@ -2,11 +2,10 @@ package n1exercici1;
 
 public class TreballadorOnline extends Treballador{
 
-    private final int WIFIPRICE;
+    private final int WIFIPRICE=50;
 
     public TreballadorOnline(String name, String surname, int hourPrice) {
         super(name, surname, hourPrice);
-        this.WIFIPRICE = 50;
     }
 
     public int getWIFIPRICE() {

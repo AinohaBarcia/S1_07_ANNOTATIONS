@@ -1,7 +1,7 @@
 package n1exercici2;
 
 public class TreballadorPresencial extends Treballador{
-    private static int fuel;
+    private static int fuel= 72;
 
     public TreballadorPresencial(String name, String surname, int hourPrice) {
         super(name, surname, hourPrice);
