@@ -17,7 +17,7 @@ public class TreballadorOnline extends Treballador{
         return super.calculateTotalSalary(totalHoursMonth)+WIFIPRICE;
     }
 
-    @SuppressWarnings("DeprecatedIsStillUsed")
+
     @Override
     @Deprecated
     public int calculateAverageHoursDay(int totalHours, int daysWeek) {

@@ -2,9 +2,9 @@ package n1exercici2;
 
 public abstract class Treballador {
 
-    protected String name;
-    protected String surname;
-    protected int hourPrice;
+    private String name;
+    private String surname;
+    private int hourPrice;
 
 
     public Treballador(String name, String surname, int hourPrice) {
